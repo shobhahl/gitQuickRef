@@ -54,3 +54,21 @@ git fetch origin
 git pull origin master
 
 
+#To fetch and check out from the head
+git fetch <repo_url> && git checkout FETCH_HEAD
+
+#To amend the previous commit
+git commit --amend
+
+#To revert the previous commit and rebase and recommit
+git reset origin/master --soft
+git pull origin master --rebase
+git commit
+
+
+#To add all files for git add with absolute paths
+git add -A
+
+#To restore the modified file back
+git restore --staged <file>...
+
